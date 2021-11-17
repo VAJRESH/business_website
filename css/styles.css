@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* global css variables */
+:root {
+  --navbar-bg: gainsboro;
+  --nav-link-text-color: #000;
+  --nav-height: 30px;
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 5px 10px;
+  height: var(--nav-height);
+  background-color: var(--navbar-bg);
+}
+.nav-items {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+.nav-items a {
+  margin: auto 10px;
+  color: var(--nav-link-text-color);
+  text-decoration: none;
+}
+.nav-items a:hover {
+  text-decoration: underline solid var(--nav-link-text-color);
+}
+
+/* title */
+.title{
+  margin-top: 1rem;
+}
+
+/* main content body */
+main{
+  padding: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+/* utils */
+.text-center{
+  text-align: center;
+}
+.responsive-text-small{
+  font-size: 1rem;
+}
+
+.responsive-text-medium{
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .responsive-text-medium{
+    font-size: 1.2rem;
+  }
+}
+
+.responsive-text-large{
+  font-size: 1rem;
+}
